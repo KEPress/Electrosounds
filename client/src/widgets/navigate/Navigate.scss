@@ -1,0 +1,16 @@
+$map: (header: #404040, plain: white );
+
+@function colorMap($key) {
+    @return map-get($map, $key);
+}
+
+header {
+    padding: 1rem;
+    background-color: colorMap(header);
+
+    a {
+        color: colorMap(plain);
+        font-weight: bold;
+        text-decoration: none;
+    }
+}
