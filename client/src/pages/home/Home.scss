@@ -1,0 +1,13 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    &-content {
+        flex: 1;
+        min-height: 100vh;
+    }
+
+    h1 {  font-weight: bold; }
+}

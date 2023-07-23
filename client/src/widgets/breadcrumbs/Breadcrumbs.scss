@@ -1,0 +1,15 @@
+$map: (main: #a0a0a0, primary: #f08000);
+
+@function colorMap($key) {
+    @return map-get($map, $key);
+}
+
+.checkout-steps > div {
+    border-bottom: 0.2rem solid colorMap(main);
+    color: colorMap(main);
+}
+
+.checkout-steps > div.active {
+    border-bottom: 0.2rem solid colorMap(primary);
+    color: colorMap(primary);
+}
