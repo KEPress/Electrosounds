@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useContext } from 'react'
+import React, { Fragment, useContext } from 'react'
 import { Helmet } from 'react-helmet'
 import { useNavigate } from 'react-router-dom'
 import { Form, Row, Col, Button } from 'react-bootstrap'
@@ -11,7 +11,7 @@ import * as Yup from 'yup'
 
 export const Profile = () => {
 
-    const navigate = useNavigate()
+    //const navigate = useNavigate()
 
     const { user, dispatch } = useContext(Context)
 
