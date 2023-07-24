@@ -50,7 +50,7 @@ application.use((error, request, response, next) => {
 })
 
 //NOTE: For local database mongodb use IP address not localhost i.e. 127.0.0.1 in dotenv file
-mongoose.connect(process.env.MONGO_LOCAL).then(() => {
+mongoose.connect(process.env.MONGO_URL).then(() => {
     application.listen(process.env.PORT || 8800, () => console.log(`Server Online`))
 }).catch((error) => console.log(error.message))
 
