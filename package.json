@@ -7,18 +7,20 @@
     "invariant": "^2.2.4",
     "js-tokens": "^4.0.0",
     "loose-envify": "^1.4.0",
-    "prop-types": "^15.8.1",
-    "react-helmet-async": "^1.3.0",
-    "react": "^18.2.0",
-    "react-fast-compare": "^3.2.2",
-    "react-dom": "^18.2.0",
     "object-assign": "^4.1.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-fast-compare": "^3.2.2",
+    "react-helmet-async": "^1.3.0",
     "react-is": "^16.13.1",
     "regenerator-runtime": "^0.13.11",
-    "shallowequal": "^1.1.0",
-    "scheduler": "^0.23.0"
+    "scheduler": "^0.23.0",
+    "shallowequal": "^1.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  },
   "scripts": {
     "build": "cd server && npm install && cd ../client && npm install && npm run build",
     "start": "node server/server.js"
